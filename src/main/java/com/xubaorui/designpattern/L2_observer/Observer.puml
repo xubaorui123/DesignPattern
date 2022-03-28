@@ -1,0 +1,60 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface Subject{
+    registerObserver();
+    removeObserver();
+    notifyObservers();
+}
+note left
+这是主题接口，
+对象使用此接口注册为观察者，
+或者把自己从观察者中删除
+end note
+
+interface Observer{
+    update();
+}
+note right
+所有潜在的观察者必须实现观察者接口，
+这个接口只有update()一个方法，
+当主题状态改变时，它被调用。
+end note
+class ConcreteSubject{
+    +void[abstract] registerObserver()
+    +void[abstract] removeObserver()
+    +void[abstract] notifyObservers()
+
+    +void[abstract] getState()
+    +void[abstract] setState()
+}
+note left
+一个具体主题总是实现主题接口，
+除了注册和撤销方法之外，
+具体主题还实现了
+notifyObservers()一个方法，
+此方法用于在状态改变时更新所有当前观察者
+end note
+
+note left of ConcreteSubject::getState
+具体主题也可能有设置和获取状态的方法
+end note
+class ConcreteObserver{
+    update(){...}
+}
+note bottom
+具体观察者可以使实现此接口的任意类。
+观察者必须注册具体主题，以便接收更新。
+end note
+
+Subject <|.. ConcreteSubject
+Observer <|.. ConcreteObserver
+
+Subject .> Observer : 许多观察者
+note top on link
+每个主题可以有许多观察者
+end note
+
+ConcreteSubject<.ConcreteObserver : 主题
+
+@enduml

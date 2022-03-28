@@ -1,6 +1,6 @@
-package com.xubaorui.designpattern.strategy.v2;
+package com.xubaorui.designpattern.L1_strategy.v2;
 
-import com.xubaorui.designpattern.strategy.v2.fly.FlyRocketPowered;
+import com.xubaorui.designpattern.L1_strategy.v2.fly.FlyRocketPowered;
 
 public class Main {
     public static void main(String[] args) {

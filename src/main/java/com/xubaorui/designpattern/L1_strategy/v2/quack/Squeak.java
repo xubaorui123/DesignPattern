@@ -1,4 +1,4 @@
-package com.xubaorui.designpattern.strategy.v2.quack;
+package com.xubaorui.designpattern.L1_strategy.v2.quack;
 
 public class Squeak implements QuackBehavior{
     @Override

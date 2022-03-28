@@ -1,4 +1,4 @@
-package com.xubaorui.designpattern.strategy.v2.fly;
+package com.xubaorui.designpattern.L1_strategy.v2.fly;
 
 public class FlyNoWay implements FlyBehavior {
     @Override

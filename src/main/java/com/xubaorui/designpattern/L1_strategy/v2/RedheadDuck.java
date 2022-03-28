@@ -1,8 +1,8 @@
-package com.xubaorui.designpattern.strategy.v2;
+package com.xubaorui.designpattern.L1_strategy.v2;
 
 
-import com.xubaorui.designpattern.strategy.v2.fly.FlyWithWings;
-import com.xubaorui.designpattern.strategy.v2.quack.Quack;
+import com.xubaorui.designpattern.L1_strategy.v2.fly.FlyWithWings;
+import com.xubaorui.designpattern.L1_strategy.v2.quack.Quack;
 
 public class RedheadDuck extends Duck {
     public RedheadDuck() {

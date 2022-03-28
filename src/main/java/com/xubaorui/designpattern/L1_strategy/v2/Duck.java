@@ -1,7 +1,7 @@
-package com.xubaorui.designpattern.strategy.v2;
+package com.xubaorui.designpattern.L1_strategy.v2;
 
-import com.xubaorui.designpattern.strategy.v2.fly.FlyBehavior;
-import com.xubaorui.designpattern.strategy.v2.quack.QuackBehavior;
+import com.xubaorui.designpattern.L1_strategy.v2.fly.FlyBehavior;
+import com.xubaorui.designpattern.L1_strategy.v2.quack.QuackBehavior;
 
 /**
  * 将鸭子的行为抽取出来
